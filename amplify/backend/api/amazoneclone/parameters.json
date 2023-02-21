@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "amazoneclone",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-02-20T11:59:14.181Z"
+}

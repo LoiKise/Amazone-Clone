@@ -5,16 +5,14 @@
  * @format
  */
 import 'react-native-gesture-handler';
-import React from 'react';
+
 import {View} from 'react-native';
+import React from 'react';
+import {Amplify} from 'aws-amplify';
+import config from './src/aws-exports';
 import Router from './src/router';
-
-// import Router from './src/router';
-// import AddressScreen from './src/screens/AddressScreen';
-// import ShoppingCartScreen from './src/screens/ShoppingCartScreen';
-
-// import ProductScreen from './src/screens/ProductScreen';
-// import HomeScreen from './src/screens/HomeScreen';
+import {withAuthenticator} from 'aws-amplify-react-native';
+Amplify.configure(config);
 
 const App = () => {
   const backgroundStyle = {flex: 1};
@@ -25,4 +23,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

@@ -5,6 +5,7 @@ import HomeStack from './homeStack';
 import ShoppingCartStack from './ShoppingCartStack';
 import Icon from '../components/Icon';
 import {AppScreens, AppTabs} from '../navigation/type';
+import MenuScreen from '../screens/MenuScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -63,7 +64,7 @@ const BottomTabNav = () => {
         options={{
           tabBarIcon: tabBarIconMenu,
         }}
-        component={HomeScreen}
+        component={MenuScreen}
         name={AppTabs.MENU}
       />
     </Tab.Navigator>
